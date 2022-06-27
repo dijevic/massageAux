@@ -1,0 +1,145 @@
+.refer{
+    margin-top:100px;
+    min-height: 100vh;
+  
+    background-image: url("/assets/spa-pics/stones.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-attachment:fixed;
+    min-height:100vh;
+    width: 100%;
+    .content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    column-gap: 40px;
+        
+       .description{
+       margin-top: 60px;
+        width:100%;
+        font-size: 2rem;
+        line-height: 2rem;
+        color:#fff;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-style: italic;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px $black;
+        animation-name:fadeInDown , opacity;
+        animation-iteration-count:initial;
+        animation-duration:.8s;
+       }
+       .description2{
+        color: $trebol;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin-top:10px;
+       }
+
+
+       .banner{
+        min-height: 350px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+        margin-top:40px;
+       }
+       .descriptionBanner{
+        background: rgba(255,255,255,0.7);
+        width: 90%;
+        box-shadow: 5px 5px 7px rgba(0,0,0,.3);
+        margin: 20px auto;
+        padding: 20px;
+        color: 000;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        max-width: 600px;
+        font-weight: 400;
+        margin-top: 30px;
+
+        .extraInfo{
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+       }
+
+    }
+
+    .bookingBtn{
+        margin: 20px auto;;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .refer{
+   
+        .content{
+   
+        column-gap: 60px;
+            .description{
+                margin-top:120px;
+            }
+            .description2{
+                margin-top:0px;
+
+            }
+        
+    
+    
+           .banner{
+            width: 80%;
+            margin: 60px auto;
+            max-width: 850px;
+           }
+          
+    
+        }
+    }
+
+    
+}
+@media screen and (min-width: 768px) {
+    .refer{
+        margin-top:150px;
+       
+        .content{
+       
+        column-gap: 70px;
+            
+           .description{
+         
+            font-size: 3rem;
+            line-height: 3rem;
+     
+           }
+           .description2{
+            color: $trebol;
+            font-size: 2.3rem;
+            line-height: 2rem;
+            
+           }
+    
+    
+           .banner{
+        
+            margin-top:60px;
+           }
+           .descriptionBanner{
+            border-radius: 5px;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+        
+           }
+    
+        }
+    }
+
+    
+}

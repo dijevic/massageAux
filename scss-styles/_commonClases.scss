@@ -1,0 +1,69 @@
+.sectionTitle{
+    font-size: 1.8rem;
+    line-height:2rem;
+    color:$black;
+    text-align: center;
+    margin-top:20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $trebol;
+    animation-name:fadeInDown ,opacity;
+    animation-iteration-count:initial;
+    animation-duration:0.9s;
+    
+ 
+
+
+}
+
+.darkenDiv{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #00000063;
+}
+
+.left{
+    justify-content: flex-start;
+}
+.right{
+    justify-content: flex-end;
+}
+.center{
+    justify-content: center;
+}
+
+.sectionTitleContainer{
+    display: flex;
+    align-items: center;
+    img{
+        animation-name:fadeInLeft , opacity;
+        animation-iteration-count:initial;
+        animation-duration:0.9s;
+    }
+  
+}
+
+.point{
+    width: 10px ;
+    height: 10px;
+    background:$trebol;
+    border-radius:100%;
+    margin-right: 20px;
+}
+
+
+
+@media screen and(min-width: 968px) {
+    .sectionTitle{
+        font-size: 3rem;
+        line-height:3rem;
+        margin-top: 40px;
+    }
+
+    picture{
+        background-color: #00000063;
+        width: 100%;
+        max-height: 800px;
+    
+    }
+    
+}
