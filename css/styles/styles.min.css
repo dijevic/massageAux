@@ -243,11 +243,15 @@ main .treatment .treatmentContent .description {
 /* header styles */
 header {
   min-height: 100vh;
-  background-image: url("/assets/backgrounds/massage-desktop.png");
+  background-image: url("/assets/therapies/therapy-7.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   position: relative;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 .centered {
@@ -340,6 +344,7 @@ header {
   animation-name: fadeInLeftShort ,opacity;
   animation-iteration-count: initial;
   animation-duration: 0.8s;
+  text-shadow: 2px 2px 5px #000;
 }
 
 .navbar-item:hover {
@@ -379,7 +384,7 @@ nav {
 
 .quote {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 0%;
   font-size: 2rem;
   line-height: 2rem;
@@ -409,6 +414,9 @@ nav {
 }
 
 @media (min-width: 968px) {
+  header {
+    background-image: url("/assets/therapies/therapy-7(3).png");
+  }
   /* ------- Navbar styles ------------- */
   .logo-navbar-container {
     width: 150px;
@@ -422,12 +430,16 @@ nav {
     border-bottom: 1px solid #9ee7e7;
   }
   .quote {
+    top: 40%;
     font-size: 3rem;
     line-height: 3rem;
+    padding: 0px 100px;
   }
   .bookingBtn {
     font-size: 1.5rem;
     line-height: 1.5rem;
+    top: 70%;
+    margin-top: 40px;
   }
   .bookingBtn:hover {
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);

@@ -10,12 +10,15 @@
 /* header styles */
 header{
     min-height: 100vh;
-    background-image: url("/assets/backgrounds/massage-desktop.png");
+    background-image: url("/assets/therapies/therapy-7.png");
     background-position: center; 
     background-size: cover;
     background-attachment:fixed;
+    background-repeat: no-repeat;
     position:relative;
-    
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
   
 
  
@@ -116,6 +119,8 @@ header{
     animation-name:fadeInLeftShort ,opacity;
     animation-iteration-count:initial;
     animation-duration:0.8s;
+    text-shadow: 2px 2px 5px $black;
+
 }
 
 .navbar-item:hover{
@@ -157,7 +162,7 @@ nav{
 
 .quote{
     position:absolute;
-    top: 40%;
+    top: 20%;
     left: 0%;
     font-size: 2rem;
     line-height: 2rem;
@@ -171,7 +176,7 @@ nav{
     animation-name:fadeInDown , opacity;
     animation-iteration-count:initial;
     animation-duration:.8s;
-
+    
 
 }
 
@@ -195,6 +200,13 @@ nav{
     }
 }
 @media (min-width:968px) {
+
+    header{
+    background-image: url("/assets/therapies/therapy-7(3).png");
+
+//    background-size: contain;
+
+    }
  
 
     /* ------- Navbar styles ------------- */
@@ -214,14 +226,19 @@ nav{
     }
 
     .quote{
+        top:40%;
         font-size: 3rem;
         line-height: 3rem;
+        padding: 0px 100px;
     
     }
 
     .bookingBtn  {
      font-size: 1.5rem;
      line-height: 1.5rem;
+     top:70%;
+     margin-top: 40px;
+
 
      &:hover{
     box-shadow: 5px 5px 8px rgba(0, 0, 0, .2);
