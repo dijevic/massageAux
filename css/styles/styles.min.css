@@ -640,6 +640,7 @@ nav {
 
 .prices {
   margin-top: 80px;
+  min-height: 100vh;
 }
 
 .prices .content {
@@ -656,11 +657,6 @@ nav {
   padding: 10px;
   border-radius: 5px;
   position: relative;
-}
-
-.prices .content .priceCard .point {
-  position: absolute;
-  right: 0;
 }
 
 .prices .content .priceCard .description {
@@ -716,6 +712,63 @@ nav {
   .prices .extrainfo {
     font-size: 1.4rem;
     line-height: 1.4rem;
+  }
+}
+
+.contact {
+  margin-top: 80px;
+  min-height: 100vh;
+}
+
+.contact .content {
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.contact .contactMessage {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.contact .contactWay {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .contactWay span {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 968px) {
+  .contact {
+    margin-top: 120px;
+  }
+  .contact .content {
+    margin-top: 30px;
+  }
+  .contact .contactMessage {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+  .contact .contactWay {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+  .contact .contactWay span {
+    font-weight: bold;
+    margin-left: 10px;
   }
 }
 
