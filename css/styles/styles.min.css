@@ -607,7 +607,7 @@ nav {
   .refer .content .banner {
     width: 100%;
     margin: 60px auto;
-    min-height: 350px;
+    min-height: 450px;
     max-width: 850px;
   }
 }
@@ -633,6 +633,87 @@ nav {
   }
   .refer .content .descriptionBanner {
     border-radius: 5px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+}
+
+.prices {
+  margin-top: 80px;
+}
+
+.prices .content {
+  width: 80%;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.prices .content .priceCard {
+  border-bottom: 5px solid #9ee7e7;
+  margin-top: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background: #F6f2ef;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.prices .content .priceCard .point {
+  position: absolute;
+  right: 0;
+}
+
+.prices .content .priceCard .description {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.prices .content .priceCard .description span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.prices .content .priceCard .price {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.prices .extrainfo {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 968px) {
+  .prices {
+    margin-top: 120px;
+  }
+  .prices .content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    gap: 40px;
+    justify-content: center;
+  }
+  .prices .content .priceCard {
+    padding: 20px;
+  }
+  .prices .content .priceCard .description {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: 15px;
+  }
+  .prices .content .priceCard .price {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+  .prices .extrainfo {
     font-size: 1.4rem;
     line-height: 1.4rem;
   }
