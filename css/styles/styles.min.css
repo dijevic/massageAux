@@ -605,8 +605,9 @@ nav {
     margin-top: 0px;
   }
   .refer .content .banner {
-    width: 80%;
+    width: 100%;
     margin: 60px auto;
+    min-height: 350px;
     max-width: 850px;
   }
 }
