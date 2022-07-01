@@ -15,6 +15,23 @@
 
 }
 
+  .bookingBtn  {
+      
+    background: $trebol;
+    padding: 10px 20px ;
+    display:block;
+    max-width: 150px;
+    font-size:1.3rem;
+    color:$darkBlue;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+    font-style: italic;
+    font-weight: bold;
+    animation-name:fadeInDown ,opacity;
+    animation-iteration-count:initial;
+    animation-duration:0.8s;
+}
+
 .darkenDiv{
     min-height: 100vh;
     width: 100%;

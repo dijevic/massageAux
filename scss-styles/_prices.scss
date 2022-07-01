@@ -2,7 +2,6 @@
     margin-top: 80px;
     min-height: 100vh;
 
-
     .content{
         // padding: 0px 5px;
         width: 80%;
@@ -59,7 +58,8 @@
 @media screen and(min-width: 968px){
     .prices{
         margin-top: 120px;
-    
+    padding: 30px;
+        
         .content{
             display: grid;
             grid-template-columns: repeat(2,minmax(400px,1fr));
