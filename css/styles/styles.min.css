@@ -91,6 +91,25 @@ a {
   list-style: none;
 }
 
+.mediumMap {
+  display: none;
+  margin-top: 40px;
+}
+
+.smallMap {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 968px) {
+  .smallMap {
+    display: none;
+  }
+  .mediumMap {
+    display: block;
+  }
+}
+
 .sectionTitle {
   font-size: 1.8rem;
   line-height: 2rem;
