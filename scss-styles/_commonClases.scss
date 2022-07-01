@@ -35,6 +35,13 @@
     animation-name:fadeInDown ,opacity;
     animation-iteration-count:initial;
     animation-duration:0.8s;
+    transition: 0.3s ease all;
+    &:hover{
+        color: $black;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .7);
+
+       
+    }
 }
 
 .darkenDiv{

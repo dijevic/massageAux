@@ -93,6 +93,12 @@ a {
   animation-name: fadeInDown ,opacity;
   animation-iteration-count: initial;
   animation-duration: 0.8s;
+  transition: 0.3s ease all;
+}
+
+.bookingBtn:hover {
+  color: #000;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .darkenDiv {
@@ -259,7 +265,7 @@ main .treatment .treatmentContent .description {
 
 header {
   min-height: 100vh;
-  background: url("/assets/therapies/therapy-71.jpg");
+  background: url("/assets/therapies/therapy-7.jpg");
   background-position: center;
   background-size: fill;
   background-attachment: fixed;
@@ -272,6 +278,7 @@ header {
 
 header .darkenDiv {
   padding-top: 20px;
+  background-color: #00000080;
 }
 
 header .container {
@@ -430,6 +437,20 @@ header .quote {
 }
 
 @media screen and (min-width: 968px) {
+  header {
+    background: url("/assets/therapies/therapy-71.jpg");
+    background-position: center;
+    background-size: fill;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+  header .container {
+    margin-top: 10px;
+  }
   header .closeIcon {
     display: none;
   }
@@ -462,6 +483,13 @@ header .quote {
   header .menu ul li a {
     font-size: 1.4rem;
     line-height: 1.4rem;
+    transition: 0.5s ease all;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+  }
+  header .menu ul li a:hover {
+    color: #9ee7e7;
+    border-bottom: 1px solid #9ee7e7;
   }
   header .seconIcon {
     display: none;
@@ -469,6 +497,9 @@ header .quote {
   header .quote {
     font-size: 3rem;
     line-height: 3rem;
+  }
+  header .quotation {
+    margin-top: 50px;
   }
 }
 
