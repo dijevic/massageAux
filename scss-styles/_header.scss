@@ -4,7 +4,7 @@
 
 header{
     
-    min-height: 100vh;
+    height: min-content;
     background: url('/assets/therapies/therapy-7.jpg');
     background-position: center;
     background-size: fill;
@@ -14,6 +14,7 @@ header{
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
+    
 
     
     .darkenDiv{
