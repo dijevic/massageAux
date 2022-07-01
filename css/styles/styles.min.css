@@ -595,6 +595,9 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  .refer {
+    margin-top: 150px;
+  }
   .refer .content {
     column-gap: 60px;
   }
@@ -651,8 +654,9 @@ nav {
 
 .prices .content .priceCard {
   border-bottom: 5px solid #9ee7e7;
+  border-right: 5px solid #9ee7e7;
   margin-top: 20px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5);
   padding: 10px;
   border-radius: 5px;
