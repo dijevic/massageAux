@@ -13,6 +13,8 @@
     &.open{
         display: flex;
     }
+
+  
     .content{
         width: 100%;
         display: flex;
@@ -27,6 +29,20 @@
         animation-name: grow,opacity;
         animation-iteration-count: initial;
         animation-duration: 0.6s;
+        flex-direction: column;
+
+        &.close{
+            animation-name: negativeOpacity,closeModal;
+            animation-iteration-count: initial;
+            animation-duration: 0.6s;
+        }
+    }
+
+    .imageDescription{
+        color:#fff;
+        font-size: 1.5rem;
+        line-height: 1.2rem;;
+        margin-top: 40px;
     }
 
     .left , .right{
@@ -41,7 +57,7 @@
         transition: 0.6s ease all;
 
         &:hover{
-            opacity: 0.5
+            opacity: 0.8
         }
     }
     .closeIcon{
@@ -58,7 +74,7 @@
         transition: 0.6s ease all;
 
         &:hover{
-            opacity: 0.5
+            opacity: 0.8
         }
     }
 

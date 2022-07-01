@@ -44,12 +44,30 @@
   }
 }
 
+@keyframes negativeOpacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes grow {
   0% {
     transform: scale(0);
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes closeModal {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 
@@ -933,6 +951,20 @@ header .quote {
   animation-name: grow,opacity;
   animation-iteration-count: initial;
   animation-duration: 0.6s;
+  flex-direction: column;
+}
+
+.modal .content.close {
+  animation-name: negativeOpacity,closeModal;
+  animation-iteration-count: initial;
+  animation-duration: 0.6s;
+}
+
+.modal .imageDescription {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  margin-top: 40px;
 }
 
 .modal .left, .modal .right {
@@ -948,7 +980,7 @@ header .quote {
 }
 
 .modal .left:hover, .modal .right:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .modal .closeIcon {
@@ -965,7 +997,7 @@ header .quote {
 }
 
 .modal .closeIcon:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .modal .imageContainer {

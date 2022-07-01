@@ -4,6 +4,8 @@ const menu = document.getElementById('menu')
 const modal = document.getElementById('modal')
 const closeModal = document.getElementById('closeModal')
 const modalImg = document.getElementById('modalImg')
+const modalContent = document.getElementById('modalContent')
+const imageDescription = document.getElementById('imageDescription')
 const leftArrow = document.getElementById('leftArrow')
 const rightArrow = document.getElementById('rightArrow')
 const homeQuote = document.getElementById('homeQuote')
@@ -43,12 +45,18 @@ const handleOpenModal = () => {
             modal.classList.toggle('open')
             modalImg.src = item.src
             itemSelected = item
+            imageDescription.innerText = itemSelected.alt
 
         })
     })
 
     closeModal.addEventListener('click', () => {
-        modal.classList.toggle('open')
+        modalContent.classList.toggle('close')
+        setTimeout(() => {
+            modal.classList.toggle('open')
+            modalContent.classList.toggle('close')
+
+        }, 450)
     })
 
     leftArrow.addEventListener('click', () => {
@@ -56,10 +64,14 @@ const handleOpenModal = () => {
 
             itemSelected = itemSelected.previousElementSibling
             modalImg.src = itemSelected.src
+            imageDescription.innerText = itemSelected.alt
+
 
         } else {
             itemSelected = lastElemnt
             modalImg.src = itemSelected.src
+            imageDescription.innerText = itemSelected.alt
+
 
         }
 
@@ -69,10 +81,14 @@ const handleOpenModal = () => {
 
             itemSelected = itemSelected.nextElementSibling
             modalImg.src = itemSelected.src
+            imageDescription.innerText = itemSelected.alt
+
 
         } else {
             itemSelected = firstElement
             modalImg.src = itemSelected.src
+            imageDescription.innerText = itemSelected.alt
+
         }
 
     })
