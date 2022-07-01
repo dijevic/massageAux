@@ -74,6 +74,11 @@ a {
   animation-duration: 0.9s;
 }
 
+.centered {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
 .bookingBtn {
   background: #9ee7e7;
   padding: 10px 20px;
@@ -727,7 +732,6 @@ header .quote {
 @media screen and (min-width: 968px) {
   .prices {
     margin-top: 120px;
-    padding: 30px;
   }
   .prices .content {
     display: grid;
