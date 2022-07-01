@@ -274,6 +274,8 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
+  -o-background-size: cover;
+  -moz-background-size: cover;
   -webkit-background-size: cover;
 }
 
@@ -447,7 +449,7 @@ header .quote {
     position: relative;
     -o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size: fill;
+    -webkit-background-size: cover;
   }
   header .container {
     margin-top: 10px;

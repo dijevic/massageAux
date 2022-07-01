@@ -6,12 +6,14 @@ header{
     
     min-height: 100vh;
     background: url('/assets/backgrounds/canvas-background.png');
+
     background-position: center;
     background-size: fill;
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
-
+    -o-background-size: cover;
+    -moz-background-size: cover;
     -webkit-background-size: cover;
 
     
@@ -202,7 +204,7 @@ z-index: 1;
         position: relative;
         -o-background-size: cover;
         -moz-background-size: cover;
-        -webkit-background-size: fill;
+        -webkit-background-size: cover;
         .container{
             margin-top: 10px;
         }
