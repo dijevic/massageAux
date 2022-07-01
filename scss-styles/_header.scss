@@ -10,8 +10,11 @@ header{
     background-size: fill;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: unset;
     -o-background-size: cover;
     -moz-background-size: cover;
+    -o-background-attachment: fixed;
+    -moz-background-attachment: fixed;
     -webkit-background-size: cover;
     
 
