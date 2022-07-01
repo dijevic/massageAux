@@ -1,6 +1,10 @@
 .contact{
     margin-top: 80px;
     min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
    
     .content{
         padding: 10px;

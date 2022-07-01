@@ -1,0 +1,20 @@
+.gallery{
+    min-height: 100vh;
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content:center;
+        padding: 5px;
+        gap:25px;
+        margin-top: 50px;
+       
+
+        img{
+            width: 100%;
+            max-height: 350px;
+            object-fit: fill;
+            border-radius: 5px;
+            box-shadow:5px 5px 7px rgba(0,0,0,0.2);
+        }
+    }
+}

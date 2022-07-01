@@ -718,6 +718,10 @@ nav {
 .contact {
   margin-top: 80px;
   min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .contact .content {
@@ -772,6 +776,27 @@ nav {
   }
 }
 
+.gallery {
+  min-height: 100vh;
+}
+
+.gallery .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  padding: 5px;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.gallery .content img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: fill;
+  border-radius: 5px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+}
+
 footer .content {
   display: flex;
   justify-content: center;
@@ -779,6 +804,7 @@ footer .content {
   flex-direction: column;
   margin-top: 50px;
   padding: 20px;
+  background: #9ee7e7;
 }
 
 footer p {
@@ -786,5 +812,6 @@ footer p {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
+  margin: 0px;
 }
 /*# sourceMappingURL=styles.min.css.map */
