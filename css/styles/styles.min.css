@@ -653,7 +653,7 @@ nav {
   border-bottom: 5px solid #9ee7e7;
   margin-top: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  background: #F6f2ef;
+  background: rgba(255, 255, 255, 0.5);
   padding: 10px;
   border-radius: 5px;
   position: relative;
