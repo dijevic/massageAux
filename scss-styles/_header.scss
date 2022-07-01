@@ -11,9 +11,8 @@ header{
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+
+    -webkit-background-size: fill;
 
     
     .darkenDiv{
@@ -203,7 +202,7 @@ z-index: 1;
         position: relative;
         -o-background-size: cover;
         -moz-background-size: cover;
-        -webkit-background-size: cover;
+        -webkit-background-size: fill;
         .container{
             margin-top: 10px;
         }

@@ -1,6 +1,7 @@
 const openMenu = document.getElementById('openMenu')
 const closeMenu = document.getElementById('closeMenu')
 const menu = document.getElementById('menu')
+const homeQuote = document.getElementById('homeQuote')
 const menuItem = document.querySelectorAll('.menuItem')
 
 
@@ -28,8 +29,9 @@ const handleOpenMenu = () => {
 
 
 
+
 const init = () => {
-    handleOpenMenu()
+    handleOpenMenu();
 
 }
 

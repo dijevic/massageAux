@@ -52,8 +52,11 @@
 }
 
 body {
-  scroll-behavior: smooth;
   list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -271,9 +274,7 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
+  -webkit-background-size: fill;
 }
 
 header .darkenDiv {
@@ -446,7 +447,7 @@ header .quote {
     position: relative;
     -o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size: cover;
+    -webkit-background-size: fill;
   }
   header .container {
     margin-top: 10px;
