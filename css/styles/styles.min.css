@@ -797,6 +797,17 @@ nav {
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 968px) {
+  .gallery {
+    margin-top: 120px;
+  }
+  .gallery .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+  }
+}
+
 footer .content {
   display: flex;
   justify-content: center;
