@@ -3,11 +3,12 @@
     min-height: 100vh;
   
     background:#fff;
-    background-position: center; 
-    background-size: cover;
-    background-attachment:fixed;
+
     min-height:100vh;
     width: 100%;
+    border-bottom: 10px solid $trebol;
+    border-top: 10px solid $trebol;
+    background: rgba($color: $white, $alpha: 0.5);
    
     .content{
     width: 100%;
@@ -24,13 +25,12 @@
         width:100%;
         font-size: 2rem;
         line-height: 2rem;
-        color:#fff;
+        color:$black;
         width: 100%;
         text-align: center;
         padding: 10px;
         font-style: italic;
         font-weight: bold;
-        text-shadow: 2px 2px 5px $black;
         animation-name:fadeInDown , opacity;
         animation-iteration-count:initial;
         animation-duration:.8s;
@@ -40,6 +40,10 @@
         font-size: 1.7rem;
         line-height: 2rem;
         margin-top:10px;
+        background: $trebol;
+        color: $black;
+        max-width: 600px;
+        margin: 10px auto;
        }
 
 
@@ -50,9 +54,9 @@
         margin-top:40px;
        }
        .descriptionBanner{
-        background: rgba(255,255,255,0.7);
+        background: $white;
         width: 90%;
-        box-shadow: 5px 5px 7px rgba(0,0,0,.3);
+        box-shadow: 5px 5px 7px rgba(0,0,0,.1);
         margin: 20px auto;
         padding: 20px;
         color: 000;
@@ -62,6 +66,7 @@
         max-width: 600px;
         font-weight: 400;
         margin-top: 30px;
+        border: 2px solid $trebol;
 
         .extraInfo{
             font-weight: 600;
@@ -123,7 +128,6 @@
      
            }
            .description2{
-            color: $trebol;
             font-size: 2.3rem;
             line-height: 2rem;
             
