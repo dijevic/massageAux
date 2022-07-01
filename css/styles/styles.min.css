@@ -276,7 +276,7 @@ header {
   position: relative;
   -o-background-size: cover;
   -moz-background-size: cover;
-  -webkit-background-size: cover;
+  -webkit-background-attachment: unset;
 }
 
 header .darkenDiv {
