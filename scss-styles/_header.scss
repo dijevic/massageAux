@@ -1,21 +1,12 @@
 
 
-
-
 header{
     
     height: 100vh;
-    background: url('/assets/therapies/therapy-7.jpg');
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    position: relative;
-    background-attachment: unset;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -webkit-background-size: cover;
+    // background: url('/assets/therapies/therapy-7.jpg');
+    background: $darkBlue;
+
+    padding-top: 20px;
     
 
     
@@ -175,13 +166,12 @@ z-index: 1;
        
         font-size: 2rem;
         line-height: 2rem;
-        color:#fff;
+        color:$white;
         width: 100%;
         text-align: center;
         padding: 10px;
         font-style: italic;
         font-weight: bold;
-        text-shadow: 2px 2px 5px $black;
         animation-name:fadeInDown , opacity;
         animation-iteration-count:initial;
         animation-duration:.8s;
@@ -198,15 +188,8 @@ z-index: 1;
 
 @media screen and(min-width:968px){
     header{
-        background: url('/assets/therapies/therapy-71.jpg');
-        background-position: center;
-        background-size: fill;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        position: relative;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
+
+    
         .container{
             margin-top: 10px;
         }
