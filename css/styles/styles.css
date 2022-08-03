@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;1,300&display=swap");
+@-webkit-keyframes fadeInBack {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes fadeInBack {
   0% {
     transform: scale(0);
@@ -7,7 +15,14 @@
     transform: scale(1);
   }
 }
-
+@-webkit-keyframes fadeInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @keyframes fadeInLeft {
   0% {
     transform: translateX(-100%);
@@ -16,7 +31,14 @@
     transform: translateX(0);
   }
 }
-
+@-webkit-keyframes fadeInLeftShort {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @keyframes fadeInLeftShort {
   0% {
     transform: translateX(-100px);
@@ -25,7 +47,14 @@
     transform: translateX(0);
   }
 }
-
+@-webkit-keyframes fadeInDown {
+  0% {
+    transform: translateY(110px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes fadeInDown {
   0% {
     transform: translateY(110px);
@@ -34,7 +63,14 @@
     transform: translateY(0);
   }
 }
-
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes opacity {
   0% {
     opacity: 0;
@@ -43,7 +79,14 @@
     opacity: 1;
   }
 }
-
+@-webkit-keyframes negativeOpacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes negativeOpacity {
   0% {
     opacity: 1;
@@ -52,7 +95,14 @@
     opacity: 0;
   }
 }
-
+@-webkit-keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes grow {
   0% {
     transform: scale(0);
@@ -61,7 +111,14 @@
     transform: scale(1);
   }
 }
-
+@-webkit-keyframes closeModal {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @keyframes closeModal {
   0% {
     transform: scale(1);
@@ -70,12 +127,11 @@
     transform: scale(0);
   }
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
 }
 
 body {
@@ -89,6 +145,7 @@ html {
 a {
   text-decoration: none;
   list-style: none;
+  color: black;
 }
 
 .mediumMap {
@@ -109,7 +166,6 @@ a {
     display: block;
   }
 }
-
 .sectionTitle {
   font-size: 1.8rem;
   line-height: 2rem;
@@ -118,9 +174,12 @@ a {
   margin-top: 20px;
   padding-bottom: 5px;
   border-bottom: 2px solid #9ee7e7;
-  animation-name: fadeInDown ,opacity;
-  animation-iteration-count: initial;
-  animation-duration: 0.9s;
+  -webkit-animation-name: fadeInDown, opacity;
+          animation-name: fadeInDown, opacity;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
 }
 
 .centered {
@@ -134,17 +193,19 @@ a {
   display: block;
   max-width: 150px;
   font-size: 1.3rem;
-  color: #16183Bff;
+  color: #16183b;
   border-radius: 5px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   font-style: italic;
   font-weight: bold;
-  animation-name: fadeInDown ,opacity;
-  animation-iteration-count: initial;
-  animation-duration: 0.8s;
+  -webkit-animation-name: fadeInDown, opacity;
+          animation-name: fadeInDown, opacity;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
   transition: 0.3s ease all;
 }
-
 .bookingBtn:hover {
   color: #000;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
@@ -153,7 +214,7 @@ a {
 .darkenDiv {
   min-height: 100vh;
   width: 100%;
-  background-color: #00000063;
+  background-color: rgba(0, 0, 0, 0.3882352941);
 }
 
 .left {
@@ -172,11 +233,13 @@ a {
   display: flex;
   align-items: center;
 }
-
 .sectionTitleContainer img {
-  animation-name: fadeInLeft , opacity;
-  animation-iteration-count: initial;
-  animation-duration: 0.9s;
+  -webkit-animation-name: fadeInLeft, opacity;
+          animation-name: fadeInLeft, opacity;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
 }
 
 .point {
@@ -194,27 +257,25 @@ a {
     margin-top: 40px;
   }
   picture {
-    background-color: #00000063;
+    background-color: rgba(0, 0, 0, 0.3882352941);
     width: 100%;
     max-height: 800px;
   }
 }
-
 main .treatments {
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 40px;
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   min-height: 100vh;
 }
-
 main .treatments .treboLogo {
   position: relative;
   top: 30px;
 }
-
 main .treatment {
   margin-top: 50px;
   display: flex;
@@ -222,6 +283,8 @@ main .treatment {
   flex-direction: column;
   overflow: hidden;
   max-width: 400px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   box-shadow: 10px -5px #9ee7e7, 2px 2px 5px rgba(0, 0, 0, 0.2);
   padding: 10px;
@@ -229,7 +292,6 @@ main .treatment {
   border: 2px solid #F6f2ef;
   background: rgba(255, 255, 255, 0.5);
 }
-
 main .treatment .treatment-title {
   font-size: 1.6rem;
   line-height: 1.6rem;
@@ -243,18 +305,17 @@ main .treatment .treatment-title {
   display: flex;
   align-items: center;
 }
-
 main .treatment .treatmentContent .img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   max-height: 400px;
   border-radius: 5px;
   margin-top: 20px;
   display: block;
   position: relative;
 }
-
 main .treatment .treatmentContent .description {
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -267,7 +328,8 @@ main .treatment .treatmentContent .description {
   main .treatments {
     padding: 20px;
     row-gap: 40px;
-    column-gap: 60px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
   }
   main .treatment {
     width: 100%;
@@ -289,7 +351,6 @@ main .treatment .treatmentContent .description {
     min-width: 50%;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .treatment {
     padding: 20px;
@@ -311,18 +372,15 @@ main .treatment .treatmentContent .description {
     min-width: 50%;
   }
 }
-
 header {
   height: 100vh;
-  background: #16183Bff;
+  background: #16183b;
   padding-top: 20px;
 }
-
 header .darkenDiv {
   padding-top: 20px;
-  background-color: #00000080;
+  background-color: rgba(0, 0, 0, 0.5019607843);
 }
-
 header .container {
   max-width: 1200px;
   margin: 0px auto;
@@ -333,35 +391,30 @@ header .container {
   padding: 0px 15px;
   z-index: 1000;
 }
-
 header .closeIcon {
   position: absolute;
   left: 10px;
   top: 10px;
 }
-
 header .closeIcon svg {
-  opacity: .5;
+  opacity: 0.5;
 }
-
 header .bars, header .closeIcon {
   width: 30px;
   height: 30px;
 }
-
 header .bars svg, header .closeIcon svg {
   width: 100%;
   height: 100%;
 }
-
 header .main-logo {
   max-width: 100px;
   width: 100%;
   height: 100%;
   max-height: 100px;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
-
 header .menu {
   position: fixed;
   top: 0px;
@@ -375,11 +428,9 @@ header .menu {
   transform: translateX(-100%);
   transition: 0.4s ease all;
 }
-
 header .menu.open {
   transform: translateX(0);
 }
-
 header .menu ul {
   display: flex;
   flex-direction: column;
@@ -387,15 +438,13 @@ header .menu ul {
   height: 100%;
   min-height: 80vh;
   justify-content: start;
-  background-color: #00000080;
+  background-color: rgba(0, 0, 0, 0.5019607843);
 }
-
 header .menu ul li {
   list-style: none;
   padding: 10px;
   margin-top: 50px;
 }
-
 header .menu ul li a {
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -403,15 +452,17 @@ header .menu ul li a {
   font-weight: 600;
   color: #F6f2ef;
   letter-spacing: 2px;
-  animation-name: fadeInLeftShort ,opacity;
-  animation-iteration-count: initial;
-  animation-duration: 0.8s;
+  -webkit-animation-name: fadeInLeftShort, opacity;
+          animation-name: fadeInLeftShort, opacity;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
   text-shadow: 2px 2px 5px #000;
   text-align: center;
   display: block;
   width: 100%;
 }
-
 header .seconIcon {
   display: flex;
   justify-content: center;
@@ -421,12 +472,10 @@ header .seconIcon {
   z-index: 20;
   max-height: 150px;
 }
-
 header .seconIcon .main-logo {
   max-width: 200px;
   max-height: 200px;
 }
-
 header .quotation {
   position: absolute;
   top: 0;
@@ -438,30 +487,30 @@ header .quotation {
   align-items: center;
   z-index: 1;
 }
-
 header .BookingBtnContainer {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 50px;
 }
-
 header .bookingBtn {
   background: #9ee7e7;
   padding: 10px 20px;
   display: block;
   max-width: 150px;
   font-size: 1.3rem;
-  color: #16183Bff;
+  color: #16183b;
   border-radius: 5px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   font-style: italic;
   font-weight: bold;
-  animation-name: fadeInDown ,opacity;
-  animation-iteration-count: initial;
-  animation-duration: 0.8s;
+  -webkit-animation-name: fadeInDown, opacity;
+          animation-name: fadeInDown, opacity;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
 }
-
 header .quote {
   font-size: 2rem;
   line-height: 2rem;
@@ -471,9 +520,12 @@ header .quote {
   padding: 10px;
   font-style: italic;
   font-weight: bold;
-  animation-name: fadeInDown , opacity;
-  animation-iteration-count: initial;
-  animation-duration: .8s;
+  -webkit-animation-name: fadeInDown, opacity;
+          animation-name: fadeInDown, opacity;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
   max-width: 1200px;
 }
 
@@ -532,13 +584,11 @@ header .quote {
     margin-top: 50px;
   }
 }
-
 .about {
   margin-top: 40px;
   padding: 20px;
   min-height: 100vh;
 }
-
 .about .content p {
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -546,14 +596,12 @@ header .quote {
   margin-top: 20px;
   font-weight: 400;
 }
-
 .about .content .profilePicture {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-
 .about .content .profilePicture img {
   width: 300px;
   height: 300px;
@@ -592,13 +640,11 @@ header .quote {
     box-shadow: 20px -11px #9ee7e7;
   }
 }
-
 @media screen and (min-width: 768px) {
   .about .content .profilePicture img {
     box-shadow: 10px -11px #9ee7e7;
   }
 }
-
 .refer {
   margin-top: 100px;
   min-height: 100vh;
@@ -609,14 +655,12 @@ header .quote {
   border-top: 10px solid #9ee7e7;
   background: rgba(246, 242, 239, 0.2);
 }
-
 .refer .logoRefer {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-
 .refer .content {
   width: 100%;
   height: 100%;
@@ -625,9 +669,9 @@ header .quote {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
-
 .refer .content .description {
   margin-top: 60px;
   width: 100%;
@@ -639,11 +683,13 @@ header .quote {
   padding: 10px;
   font-style: italic;
   font-weight: bold;
-  animation-name: fadeInDown , opacity;
-  animation-iteration-count: initial;
-  animation-duration: .8s;
+  -webkit-animation-name: fadeInDown, opacity;
+          animation-name: fadeInDown, opacity;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
 }
-
 .refer .content .description2 {
   color: #9ee7e7;
   font-size: 1.7rem;
@@ -654,21 +700,19 @@ header .quote {
   max-width: 600px;
   margin: 10px auto;
 }
-
 .refer .content .banner {
   min-height: 350px;
   border-radius: 10px;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
   margin-top: 40px;
 }
-
 .refer .content .descriptionBanner {
   background: #fff;
   width: 90%;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
   padding: 20px;
-  color: 000;
+  color: 0;
   border-radius: 5px;
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -677,14 +721,12 @@ header .quote {
   margin-top: 30px;
   border: 4px solid #9ee7e7;
 }
-
 .refer .content .descriptionBanner .extraInfo {
   font-weight: 600;
   display: block;
   margin-top: 10px;
   padding-left: 20px;
 }
-
 .refer .bookingBtn {
   margin: 20px auto;
 }
@@ -694,7 +736,8 @@ header .quote {
     margin-top: 150px;
   }
   .refer .content {
-    column-gap: 60px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
   }
   .refer .content .description {
     margin-top: 50px;
@@ -709,13 +752,13 @@ header .quote {
     max-width: 850px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .refer {
     margin-top: 150px;
   }
   .refer .content {
-    column-gap: 70px;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
   }
   .refer .content .description {
     font-size: 3rem;
@@ -734,18 +777,15 @@ header .quote {
     line-height: 1.4rem;
   }
 }
-
 .prices {
   margin-top: 80px;
   min-height: 100vh;
 }
-
 .prices .content {
   width: 80%;
   margin: 50px auto;
   max-width: 600px;
 }
-
 .prices .content .priceCard {
   border-bottom: 5px solid #9ee7e7;
   border-right: 5px solid #9ee7e7;
@@ -756,26 +796,22 @@ header .quote {
   border-radius: 5px;
   position: relative;
 }
-
 .prices .content .priceCard .description {
   font-size: 1.3rem;
   line-height: 1.3rem;
   font-weight: 400;
   margin-top: 10px;
 }
-
 .prices .content .priceCard .description span {
   font-style: italic;
   font-weight: bold;
 }
-
 .prices .content .priceCard .price {
   font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 600;
   margin-top: 25px;
 }
-
 .prices .extrainfo {
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -812,7 +848,6 @@ header .quote {
     line-height: 1.4rem;
   }
 }
-
 .contact {
   margin-top: 80px;
   min-height: 80vh;
@@ -821,12 +856,10 @@ header .quote {
   justify-content: center;
   flex-direction: column;
 }
-
 .contact .content {
   padding: 10px 20px;
   margin-top: 25px;
 }
-
 .contact .contactMessage {
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -835,7 +868,6 @@ header .quote {
   max-width: 600px;
   margin: 10px auto;
 }
-
 .contact .contactWay {
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -847,10 +879,15 @@ header .quote {
   align-items: center;
   justify-content: center;
 }
-
 .contact .contactWay span {
   font-weight: bold;
   margin-left: 10px;
+}
+.contact .contactWay span a {
+  transition: all 300ms;
+}
+.contact .contactWay span a:hover {
+  color: #4dc8c8;
 }
 
 @media screen and (min-width: 968px) {
@@ -873,11 +910,9 @@ header .quote {
     margin-left: 10px;
   }
 }
-
 .gallery {
   min-height: 100vh;
 }
-
 .gallery .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -886,11 +921,11 @@ header .quote {
   gap: 25px;
   margin-top: 50px;
 }
-
 .gallery .content img {
   width: 100%;
   max-height: 350px;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   border-radius: 5px;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
 }
@@ -905,7 +940,6 @@ header .quote {
     margin-top: 60px;
   }
 }
-
 .modal {
   position: fixed;
   top: 0;
@@ -918,11 +952,9 @@ header .quote {
   justify-content: center;
   z-index: 2000;
 }
-
 .modal.open {
   display: flex;
 }
-
 .modal .content {
   width: 100%;
   display: flex;
@@ -934,70 +966,66 @@ header .quote {
   z-index: 2000;
   max-width: 800px;
   margin: 0px auto;
-  animation-name: grow,opacity;
-  animation-iteration-count: initial;
-  animation-duration: 0.6s;
+  -webkit-animation-name: grow, opacity;
+          animation-name: grow, opacity;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   flex-direction: column;
 }
-
 .modal .content.close {
-  animation-name: negativeOpacity,closeModal;
-  animation-iteration-count: initial;
-  animation-duration: 0.6s;
+  -webkit-animation-name: negativeOpacity, closeModal;
+          animation-name: negativeOpacity, closeModal;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
-
 .modal .imageDescription {
   color: #fff;
   font-size: 1.5rem;
   line-height: 1.2rem;
   margin-top: 40px;
 }
-
 .modal .left, .modal .right {
   position: absolute;
   top: 50%;
   padding: 5px;
-  background: #00000080;
+  background: rgba(0, 0, 0, 0.5019607843);
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.6s ease all;
 }
-
 .modal .left:hover, .modal .right:hover {
   opacity: 0.8;
 }
-
 .modal .closeIcon {
   position: absolute;
   top: -30px;
   right: 0;
   padding: 5px;
-  background: #00000080;
+  background: rgba(0, 0, 0, 0.5019607843);
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.6s ease all;
 }
-
 .modal .closeIcon:hover {
   opacity: 0.8;
 }
-
 .modal .imageContainer {
   position: relative;
 }
-
 .modal .left {
   left: 5px;
 }
-
 .modal .right {
   right: 5px;
 }
-
 .modal .modalImg {
   width: 100%;
   height: 100%;
@@ -1007,11 +1035,13 @@ header .quote {
   min-height: 200px;
   min-width: 200px;
 }
-
 .modal .modalImg.left {
-  animation-name: fadeInLeft,opacity;
-  animation-iteration-count: initial;
-  animation-duration: 0.6s;
+  -webkit-animation-name: fadeInLeft, opacity;
+          animation-name: fadeInLeft, opacity;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 footer .content {
@@ -1023,12 +1053,10 @@ footer .content {
   padding: 20px;
   background: #9ee7e7;
 }
-
 footer p {
   font-weight: bold;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   margin: 0px;
-}
-/*# sourceMappingURL=styles.min.css.map */
+}/*# sourceMappingURL=styles.css.map */
